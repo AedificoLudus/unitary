@@ -2,7 +2,7 @@
 #include <iomanip>
 #include <string>
 #include <fstream>
-#include "stats.txt"
+//#include "stats.txt"
 #include "football_func.h"
 
 using std::ifstream;
