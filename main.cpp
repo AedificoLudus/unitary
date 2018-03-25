@@ -5,14 +5,9 @@
 //#include "stats.txt"
 #include "football_func.h"
 
-using std::ifstream;
-using std::ofstream;
-using std::string;
-using std::cout
-using std::cin
 
-ifstream stats;
-ofstream outfile;
+std::ifstream stats;
+std::ofstream outfile;
 
 int main()
 {
@@ -24,10 +19,10 @@ int main()
 
     stats.open("stats.txt");
 
-    ifstream myFile("filename.txt");
+    std::ifstream myFile("filename.txt");
     if (myFile.fail()) {
-        cout << "stats.txt not found" << endl;
-        cout << "Program will now terminate." << endl;
+        std::cout << "stats.txt not found\n";
+        std::cout << "Program will now terminate.\n";
         return 1;
     }
 

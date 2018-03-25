@@ -6,8 +6,8 @@
 
 struct footBallPlayerType
 {
-    string name;
-    string position;
+    std::string name;
+    std::string position;
     int touchDowns;
     int catches;
     int passingYards;
@@ -18,7 +18,7 @@ struct footBallPlayerType
 
 void showMenu();
 
-void getData(ifstream& inp, footBallPlayerType list[], int length, footBallPlayerType jock); //list[]
+void getData(std::ifstream& inp, footBallPlayerType list[], int length, footBallPlayerType jock); //list[]
 
 //void printPlayerData(footBallPlayerType list[], int length, int playerNum);
 //

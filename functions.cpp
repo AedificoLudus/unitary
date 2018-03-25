@@ -4,12 +4,12 @@ void showMenu()
 {
     int choice;
 
-    cout << endl
-        << " 1 - View Current Statistics" << endl
-        << " 2 - Update Statistics" << endl
-        << " 3 - Exit" << endl
+    std::cout << "\n"
+        << " 1 - View Current Statistics\n"
+        << " 2 - Update Statistics\n"
+        << " 3 - Exit\n"
         << " Enter your choice and press return key: ";
-    cin >> choice;
+    std::cin >> choice;
 
     switch (choice)
     {
@@ -24,33 +24,33 @@ void showMenu()
 
 
         case 3:
-        cout << "End of Program.";
+        std::cout << "End of Program.";
         exit(1); //code to terminate the program
             break;
 
 
         default:
-            cout << "Invalid input";
+            std::cout << "Invalid input";
             break;
 
     }
 }
 
-void getData(ifstream & inf, footBallPlayerType list[], int length)
+void getData(std::ifstream & inf, footBallPlayerType list[], int length)
 {
 }
 
 
-void getData(ifstream& inp, footBallPlayerType list[], int length, footBallPlayerType jock) //list[]
+void getData(std::ifstream& inp, footBallPlayerType list[], int length, footBallPlayerType jock) //list[]
 {
 
-    cin >> jock.name;
-    cin >> jock.position;
-    cin >> jock.touchDowns;
-    cin >> jock.catches;
-    cin >> jock.passingYards;
-    cin >> jock.receivingYards;
-    cin >> jock.rushingYards;
+    std::cin >> jock.name;
+    std::cin >> jock.position;
+    std::cin >> jock.touchDowns;
+    std::cin >> jock.catches;
+    std::cin >> jock.passingYards;
+    std::cin >> jock.receivingYards;
+    std::cin >> jock.rushingYards;
 
 
 }
